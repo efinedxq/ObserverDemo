@@ -5,7 +5,7 @@ public class ConcreteObserver implements Observer {
 	@Override
 	public void update() {
 		// TODO Auto-generated method stub
-        System.out.println("鎺ユ敹鍒版秷鎭紝骞惰繘琛屽鐞嗭紒");
+		 System.out.println("接收到消息，并进行处理！");
 	}
 
 }

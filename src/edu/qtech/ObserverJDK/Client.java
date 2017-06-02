@@ -5,15 +5,16 @@ import java.util.Observer;
 public class Client {
 	public static void main(String[] args) {
 
-		// åˆ›å»ºè¢«è§‚å¯Ÿè€…å¯¹è±¡
+		// ´´½¨±»¹Û²ìÕß¶ÔÏó
 		Watched watched = new Watched();
-		// åˆ›å»ºè§‚å¯Ÿè€…å¯¹è±¡ï¼Œå¹¶å°†è¢«è§‚å¯Ÿè€…å¯¹è±¡ç™»è®°
+		// ´´½¨¹Û²ìÕß¶ÔÏó£¬²¢½«±»¹Û²ìÕß¶ÔÏóµÇ¼Ç
 		Observer watcher = new Watcher(watched);
 		Observer watcher1 = new Watcher(watched);
-		// ç»™è¢«è§‚å¯Ÿè€…çŠ¶æ€èµ‹å€¼
+		// ¸ø±»¹Û²ìÕß×´Ì¬¸³Öµ
 		watched.setData("start");
 		watched.setData("run");
 		watched.setData("stop");
 
 	}
 }
+

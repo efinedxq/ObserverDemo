@@ -3,17 +3,17 @@ package edu.qtech.Observer;
 import java.util.Vector;
 
 public abstract class Subject {
-	 //å®šä¹‰è§‚å¯Ÿè€…åˆ—è¡¨
+	 //¶¨Òå¹Û²ìÕßÁÐ±í
 	 private Vector<Observer> obsVector = new Vector<Observer>();
-	 //å¢žåŠ ä¸€ä¸ªè§‚å¯Ÿè€…
+	 //Ôö¼ÓÒ»¸ö¹Û²ìÕß
 	 public void addObserver(Observer o){
 		 this.obsVector.add(o);
 	 }
-	 //åˆ é™¤ä¸€ä¸ªè§‚å¯Ÿè€…
+	 //É¾³ýÒ»¸ö¹Û²ìÕß
 	 public void deleteObserver(Observer o){
 		 this.obsVector.remove(o);
 	 }
-	 //é€šçŸ¥ä¸€ä¸ªè§‚å¯Ÿè€…
+	 //Í¨ÖªÒ»¸ö¹Û²ìÕß
 	 public void notifyObserver(){
 		 for(Observer o:this.obsVector){
 			 o.update();

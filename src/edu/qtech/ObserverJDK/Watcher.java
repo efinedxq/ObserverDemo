@@ -13,7 +13,7 @@ public class Watcher implements Observer {
 	@Override
 	public void update(Observable o, Object arg) {
 		// TODO Auto-generated method stub
-        System.out.println("鐘舵�佸彂鐢熸敼鍙橈細"+((Watched)o).getData());
+        System.out.println("状态发生改变："+((Watched)o).getData());
 	}
 
 }
